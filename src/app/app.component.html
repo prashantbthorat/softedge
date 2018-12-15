@@ -1,22 +1,33 @@
 <div class="container-fluid">
-    <div class="row">
-       <div class="col-12">
+   <div class="row">
+        <header class="col-12 p-0">
             <app-top-panel></app-top-panel>
-       </div>
-    </div>
+        </header>
+   </div>
     <div class="row">
-        <div class="col-3">
-            <app-left-panel></app-left-panel>
-        </div>
-        <div class="col-9">
-            <button type="button" class="btn btn-primary">abc</button>
-        </div>
+        <aside class="col-2">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <div class="left-panel-wrapper">
+                        <app-left-panel></app-left-panel>
+                    </div>
+                </div>
+            </div>            
+        </aside>
+        <section class="col-10">
+            <div class="row">
+                <div class="col-12 p-0">
+                   <div class="body-wrapper">
+                        <router-outlet></router-outlet>
+                   </div>
+                   <div class="footer-wrapper">
+                        <app-footer></app-footer>
+                   </div>
+                </div>
+            </div>
+        </section>
     </div>
-    <div class="row">
-       <div class="col-12">
-            <app-footer></app-footer>
-       </div>
-    </div>
+ 
     
 </div>
 

@@ -6,10 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-panel.component.scss']
 })
 export class TopPanelComponent implements OnInit {
-  navItem:any[];
   
   constructor() {
-    this.navItem = ['Home','Signin','Singup']
    }
 
   ngOnInit() {

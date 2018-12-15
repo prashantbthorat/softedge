@@ -1,0 +1,16 @@
+.left-panel-wrapper{
+    width: 100%;
+    height: calc(100vh - 57px);
+    box-shadow: 0 0 5px #ddd;
+}
+.body-wrapper{
+    width: 100%;
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+.footer-wrapper{
+    padding: 10px 0;
+    text-align: center;
+    background: #f5f5f5;
+    box-shadow: 0 0 5px #ddd;
+}
