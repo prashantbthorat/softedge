@@ -10,6 +10,7 @@ import { SignUpComponent } from './auth/sign-up/sign-up.component';
 import { ForgotPasswordComponent } from './auth/forgot-password/forgot-password.component';
 import { ResetPasswordComponent } from './auth/reset-password/reset-password.component';
 import { RouterModule, Routes } from '@angular/router';
+import { PrimaryButtonHoverDirective } from './directives/primary-button-hover.directive';
 
 const appRoutes: Routes = [
   {
@@ -36,6 +37,7 @@ const appRoutes: Routes = [
     SignUpComponent,
     ForgotPasswordComponent,
     ResetPasswordComponent,
+    PrimaryButtonHoverDirective,
   ],
   imports: [
     BrowserModule,
