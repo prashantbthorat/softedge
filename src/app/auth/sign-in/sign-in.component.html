@@ -1,18 +1,26 @@
-<div class="sign-in-wrapper">
+<div class="sign-in-wrapper clearfix">
   <h3>Sign In</h3>
   <form>
+
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"  name="formEmailAdd">
+        
+
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
+
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"  name="formPassword">
       </div>
+
      <div class="col-12 p-0">
         <a class="fp" routerLink='/forgot-password' >Forgot password</a>
      </div>
-      <button type="submit" class="btn btn-primary btn-submit" appPrimaryButtonHover > Submit</button>
-    </form>
+    <!-- <button type="submit" class="btn btn-outline-success btn-submit float-left" (click)="postSignInData();"  appPrimaryButtonHover > Submit</button> -->
+    <button type="submit" class="btn btn-outline-success btn-submit float-left" (click)="signInSubmit()"> Submit</button>
+    <button type="button" class="btn btn-outline-danger float-right"> Clear</button>
+
+  </form>
 </div>
