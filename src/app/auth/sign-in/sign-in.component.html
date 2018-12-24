@@ -1,10 +1,10 @@
 <div class="sign-in-wrapper clearfix">
   <h3>Sign In</h3>
-  <form>
+  <form [formGroup]="signInForm" (ngSubmit)="onSubmit()">
 
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"  name="formEmailAdd">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email"  formControlName="formEmailAdd">
         
 
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
@@ -12,15 +12,14 @@
 
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"  name="formPassword">
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password"  formControlName="formPassword">
       </div>
 
      <div class="col-12 p-0">
         <a class="fp" routerLink='/forgot-password' >Forgot password</a>
      </div>
-    <!-- <button type="submit" class="btn btn-outline-success btn-submit float-left" (click)="postSignInData();"  appPrimaryButtonHover > Submit</button> -->
-    <button type="submit" class="btn btn-outline-success btn-submit float-left" (click)="signInSubmit()"> Submit</button>
-    <button type="button" class="btn btn-outline-danger float-right"> Clear</button>
+    <button type="submit" class="btn btn-outline-success btn-submit float-left"> Submit</button>
+    <button type="button" class="btn btn-outline-danger float-right" (click)="resetForm()"> Reset</button>
 
   </form>
 </div>
